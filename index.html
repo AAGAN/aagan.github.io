@@ -1,195 +1,225 @@
-<!DOCTYPE HTML>
 
-<html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164271523-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+<!doctype html>
+<html lang="en">
 
-		  gtag('config', 'UA-164271523-1');
-		</script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164271523-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-		<title>A Agan</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<script type="text/javascript"
-  			src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
-		</script>
-	</head>
-	<body>
+    gtag('config', 'UA-164271523-1');
+  </script>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Advanced Thermal Fluids Calculators">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Arash Agan</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/global.css">
+  <title>Welcome</title>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      options: {
+        enableMenu: false
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
+</head>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Projects</a></li>
-								<li><a href="elements.html">Hobbies</a></li>
-								<li><a href="resume.html">Resume</a></li>
-								<li><a href="contact.html">Contact Me</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="font-size:large;" href="/" data-link>Advanced Thermal Fluids</a>
+      <!-- <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a href="/" class="nav-item nav-link active" data-link>Home</a>
+          <a href="/allCalculators" class="nav-item nav-link" data-link>Calculators</a>
+          <a href="/projects" class="nav-item nav-link" data-link>Projects</a>
+          <!-- <a href="/blog" class="nav-item nav-link" data-link>Blog</a> -->
+          <a href="/about" class="nav-item nav-link" data-link>About me</a>
+          <a href="/contact" class="nav-item nav-link" data-link>Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<div class="logo"><span class="icon fa-diamond"></span></div>
-							<h2>Arash Agan</h2>
-							<p> Fundamental Equations of Fluid Dynamics</p>
-							</div>
-					</section>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
+  <div class="container-fluid">
 
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major"> Navier-Stokes Equations </h2>
-										<p>$$ \partial_t \rho + \partial_i (\rho u_{i}) = 0 $$</p>
-										<p> $$ \partial_t (\rho u_{i}) + \partial_j [\rho u_{i}u_{j}] = -\partial_i p + \partial_j \tau_{ij}+ \rho f_{i}  $$ </p>
-										<p> $$ \partial_t (\rho e) + (\rho e+p) \partial_i u_{i} = \partial_i(\tau_{ij}u_{j}) + \rho f_{i}u_{i} + \partial_i(\dot{ q_{i}}) + r  $$ </p>
-										<a href="https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations" class="special">Learn more</a>	
-									</div>
-								</div>
-							</section>
+  <div class="jumbotron">
+    <h1 class="display-4 jumbotron-h1" style="color:white; text-shadow: 0px 0px 5px black;">Welcome to Advanced Thermal Fluids!</h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+    <p class="jumbotron-p" style="color:white; text-shadow: 0px 0px 5px black;">Choose from the topics below to see the related calculators.</p>
+    <a class="btn btn-primary btn-lg" href="/allCalculators" role="button">All Calculators</a>
+  </div>
+</div>
+<div class="container">
 
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Euler Equatios</h2>
-										<p>$$ \partial_i u_i=0 $$</p>
-										<p>$$ \partial_t (\rho u_i) + \partial_j (\rho u_i u_j) = \partial_i p $$</p>
-										<p>$$ \partial_t (\rho e) + (\rho e + p) \partial_i u_{i} = 0 $$</p>
-										<a href="https://en.wikipedia.org/wiki/Euler_equations_(fluid_dynamics)" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+  <div class="row">
 
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Bernoulli's Equation</h2>
-										<p> $$ p+\frac{1}{2}\rho v^2+\rho g = H_{constant} $$ </p>
-										<a href="https://en.wikipedia.org/wiki/Bernoulli%27s_principle" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+    <div class="col-md-6">
+      <a href="/dimensionlessNumbers/dimensionlessNumbersCalculators" class="custom-card">
+        <div class="card bg-dark text-white" style="margin-bottom: 25px;">
+          <img src="/assets/img/dimensionless.jpg" class="card-img" alt="Dimensionless Numbers">
+          <div class="card-img-overlay">
+            <h4 class="card-title" style="color:white; text-shadow: 0px 0px 5px black;">Dimensionless Numbers</h4>
+            <!-- <a href="/dimensionlessNumbers/dimensionlessNumbersCalculators" class="card-link" style="color:white; text-shadow: 0px 0px 5px black;">Calculators & more...</a> -->
+          </div>
+        </div>
+      </a>
+    </div>
 
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Vitae phasellus</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Ante fermentum</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul>
-								</div>
-							</section>
+    <div class="col-md-6">
+      <a href="/fluidDynamics/fluidDynamicsCalculators" class="custom-card">
+        <div class="card bg-dark text-white" style="margin-bottom: 25px;">
+          <img src="/assets/img/fluidMechanics.jpg" class="card-img" alt="Fluid Dynamics">
+          <div class="card-img-overlay">
+            <h4 class="card-title">Fluid Dynamics</h4>
+            <!-- <a href="" class="card-link">Calculators & more...</a> -->
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 
-					</section>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="field">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
-								</div>
-								<div class="field">
-									<label for="email">Email</label>
-									<input type="email" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="4"></textarea>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="fa-home">
-									Agan Inc<br />
-									Providence, RI<br />
-								</li>
-								<li class="fa-phone">(617) 000-0000</li>
-								<li class="fa-envelope"><a href="#">arash.agan@gmail.com</a></li>
-								<li class="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Agan Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+  <div class="row">
+    <div class="col-md-6">
+      <a href="/thermodynamics/thermodynamicsCalculators" class="custom-card">
+        <div class="card bg-dark text-white" style="margin-bottom: 25px;">
+          <img src="/assets/img/thermodynamics.jpg" class="card-img" alt="Thermodynamics">
+          <div class="card-img-overlay">
+            <h4 class="card-title">Thermodynamics</h4>
+            <!-- <a href="/thermodynamics/thermodynamicsCalculators" class="card-link">Calculators & more...</a> -->
+          </div>
+        </div>
+      </a>
+    </div>
 
-			</div>
+    <div class="col-md-6">
+      <a href="/fireProtection/fireProtectionCalculators" class="custom-card">
+        <div class="card bg-dark text-white" style="margin-bottom: 25px;">
+          <img src="/assets/img/fireProtection.jpg" class="card-img" alt="Fire Protection">
+          <div class="card-img-overlay">
+            <h4 class="card-title">Fire Protection</h4>
+            <!-- <a href="" class="card-link">Calculators & more...</a> -->
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
 
-	</body>
+</div>
+<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-touch="true">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="/assets/img/splash.jpg" alt="Welcome">
+        <div class="carousel-caption">
+          <h4 style="color:white; text-shadow: 0px 0px 5px black;">Welcome To Advanced Thermal Fluids!</h4>
+          <p class="d-none d-md-block" style="color:white; text-shadow: 0px 0px 5px black;">Browse different calculators
+            and enjoy!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/assets/img/fluidMechanics.jpg" alt="Fluid Dynamics">
+        <div class="carousel-caption">
+          <h4><a style="color:white; text-shadow: 0px 0px 5px black;"
+              href="/fluidDynamics/fluidDynamicsCalculators">Fluid
+              Dynamics</a></h4>
+          <p class="d-none d-md-block" style="color:white; text-shadow: 0px 0px 5px black;">Fluid mechanics is the
+            branch of physics concerned with the mechanics of fluids
+            (liquids, gases, and plasmas) and the forces on them.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/assets/img/thermodynamics.jpg" alt="Thermodynamics">
+        <div class="carousel-caption">
+          <h4><a style="color:white; text-shadow: 0 0 3px #000000, 0 0 5px #000000"
+              href="/thermodynamics/thermodynamicsCalculators">
+              Thermodynamics</a></h4>
+          <p class="d-none d-md-block" style="color:white; text-shadow: 0px 0px 5px black;">Thermodynamics is the branch
+            of physical science that deals with the relations
+            between heat and other forms of energy (such as mechanical, electrical, or chemical energy), and, by
+            extension, of the relationships between all forms of energy.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/assets/img/fireProtection.jpg" alt="Fire Protection">
+        <div class="carousel-caption">
+          <h4><a style="color:white; text-shadow: 0px 0px 5px black;" href="/fireProtection/fireProtectionCalculators">
+              Fire
+              Protection</a></h4>
+          <p class="d-none d-md-block" style="color:white; text-shadow: 0px 0px 5px black;">Fire protection is the study
+            and practice of mitigating the unwanted effects of
+            potentially destructive fires.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> -->
+
+
+  <!-- Optional JavaScript -->
+  <!-- <script type="module" src="/static/js/index.js"></script> -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+          $(".navbar-toggler").click();
+        }
+      });
+    });
+
+    $('.navbar-nav>li>a').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
+  </script>
+</body>
+
 </html>

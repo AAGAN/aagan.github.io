@@ -1,0 +1,177 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164271523-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164271523-1');
+  </script>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Biot Number Calculator With Unit Conversion">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/global.css">
+  <title>Biot Number Calculator</title>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      options: {
+        enableMenu: false
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="font-size:large;" href="/" data-link>Advanced Thermal Fluids</a>
+      <!-- <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a href="/" class="nav-item nav-link active" data-link>Home</a>
+          <a href="/allCalculators" class="nav-item nav-link" data-link>Calculators</a>
+          <a href="/projects" class="nav-item nav-link" data-link>Projects</a>
+          <!-- <a href="/blog" class="nav-item nav-link" data-link>Blog</a> -->
+          <a href="/about" class="nav-item nav-link" data-link>About me</a>
+          <a href="/contact" class="nav-item nav-link" data-link>Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  
+
+<div class="row">
+    <div class="col">
+        <h5 style="text-align: center; margin-top: 5px;">Biot Number Calculator</h5>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <p style="text-align: center;">$$ Bi = \frac{h}{k}L $$</p> 
+    </div>
+</div>
+
+<script>
+    printValue = function(){
+        let k = document.querySelector('#thermalConductivityUnit').value * document.querySelector('#thermalConductivityValue').value;
+        let L = document.querySelector('#lengthUnit').value * document.querySelector('#lengthValue').value;
+        let h = document.querySelector('#convectiveHeatTransferCoefficientUnit').value * document.querySelector('#convectiveHeatTransferCoefficientValue').value;
+        let Bi = document.querySelector('#BiValue');
+        Bi.value = k==0? "0" : Number((h * L / k ).toFixed(4));
+    }
+</script>
+
+
+<div class="row justify-content-center">
+    <div class="input-group col-xl-5 col-lg-6 col-md-8 col-sm-10">
+        <div class="input-group">
+        <span  style="margin-left:3px;margin-bottom: -4px; margin-top:5px;">Convective heat transfer coefficient ($h$): </span>
+        </div>
+        <input type="number" aria-label="convectiveHeatTransferCoefficient" class="form-control"  id="convectiveHeatTransferCoefficientValue" onblur="printValue();">
+        <select name="convectiveHeatTransferCoefficientUnit" id="convectiveHeatTransferCoefficientUnit"  onchange="printValue();">
+                <option value="1" >W/(m^2.K)</option>
+        </select>
+    </div>
+</div>
+
+
+<div class="row justify-content-center">
+    <div class="input-group col-xl-5 col-lg-6 col-md-8 col-sm-10">
+        <div class="input-group">
+        <span  style="margin-left:3px;margin-bottom: -4px; margin-top:5px;">Thermal Conductivity ($k$): </span>
+        </div>
+        <input type="number" aria-label="thermalConductivity" class="form-control" id="thermalConductivityValue" onblur="printValue();">
+        <select name="thermalConductivityUnit" id="thermalConductivityUnit"  onchange="printValue();">
+                <option value="1" >W/(m.K)</option>
+                <option value="0.01" >W/(cm.K)</option>
+                <option value="0.001927253" >cal/s/cm/C</option>
+                <option value="0.001927253" >BTU.in/s/ft^2/F</option>
+        </select>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="input-group col-xl-5 col-lg-6 col-md-8 col-sm-10">
+        <div class="input-group">
+        <span style="margin-left:3px;margin-bottom: -4px; margin-top:5px;">Characteristic length ($L$): </span>
+        </div>
+        <input type="number" aria-label="length" class="form-control"  id="lengthValue" onblur="printValue();">
+        <select name="lengthUnit" id="lengthUnit"  onchange="printValue();">
+                <option value="1" >m</option>
+                <option value="0.3048" >ft</option>
+                <option value="0.01" >cm</option>
+                <option value="0.001" >mm</option>
+        </select>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="input-group col-xl-5 col-lg-6 col-md-8 col-sm-10">
+        <div class="input-group">
+        <span style="margin-left:3px;margin-bottom: -4px; margin-top:5px;">Biot Number ($Bi$): </span>
+        </div>
+        <input readonly type="number" aria-label="Bi" class="form-control" id="BiValue">
+        <select name="BiUnit" id="BiUnit" >
+            <option value="1" >dimensionless</option>
+        </select>
+    </div>
+</div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- <script type="module" src="/static/js/index.js"></script> -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+          $(".navbar-toggler").click();
+        }
+      });
+    });
+
+    $('.navbar-nav>li>a').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
+  </script>
+</body>
+
+</html>

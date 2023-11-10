@@ -1,0 +1,41 @@
+body{
+    margin-top: 56px;
+    background-color: rgb(36, 32, 32);
+    color: rgb(197, 197, 245);
+    overflow-x: hidden;
+}
+
+a{
+    color: rgb(197, 194, 194);
+    text-decoration: none;
+    text-emphasis: none;
+    text-transform: none;
+}
+
+a:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.jumbotron {
+    background-image: url("/assets/img/splash.jpg");
+    background-size: cover;
+  }
+
+  a.custom-card,
+  a.custom-card:hover {
+    color: inherit;
+  }
+
+  p.jumbotron-p,
+  h1.jumbotron-h1{
+      color:inherit
+  }
+
+p.i {
+    text-indent: 30px;
+}
