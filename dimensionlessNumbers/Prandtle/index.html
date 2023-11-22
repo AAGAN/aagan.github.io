@@ -210,8 +210,8 @@
 
         let Pr = document.querySelector('#Value4');
         Pr.value = 0;
-        if (k != 0) { Pr.value = Number((cp * mu / k).toFixed(4)); }
-        if (alpha != 0) { Pr.value = Number((nu / alpha).toFixed(4)) };
+        if (k != 0) { Pr.value = Number((cp * mu / k).toFixed(6)); }
+        if (alpha != 0) { Pr.value = Number((nu / alpha).toFixed(6)) };
 
     }
 
@@ -273,8 +273,8 @@
             <div class="input-group">
                 <span class="" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;">Specific Heat ($c_p$): </span>
             </div>
-            <input type="number" aria-label="Value1" class="form-control" id="Value1" onblur="printValue();">
-            <select name="Unit1" id="Unit1"  onchange="printValue();">
+            <input type="number" aria-label="Value1" class="form-control" id="Value1" oninput="printValue();">
+            <select name="Unit1" id="Unit1"  oninput="printValue();">
                 <option value="1">J/(kg.K)</option>
                 <option value="0.001">J/(gr.K)</option>
                 <option value="0.000239006">cal/(gr.C)</option>
@@ -289,8 +289,8 @@
             <div class="input-group">
                 <span class=" mx" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;">Dynamic Viscosity ($\mu$): </span>
             </div>
-            <input type="number" aria-label="Value2" class="form-control" id="Value2" onblur="printValue();">
-            <select name="Unit2" id="Unit2"  onchange="printValue();">
+            <input type="number" aria-label="Value2" class="form-control" id="Value2" oninput="printValue();">
+            <select name="Unit2" id="Unit2"  oninput="printValue();">
                 <option value="1">Pa.s</option>
                 <option value="0.1">gr/cm s</option>
                 <option value="0.1">dyne s/cm^2</option>
@@ -309,8 +309,8 @@
             <div class="input-group">
                 <span class="" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;"> Thermal Conductivity ($k$): </span>
             </div>
-            <input type="number" aria-label="Value3" class="form-control" id="Value3" onblur="printValue();">
-            <select name="Unit3" id="Unit3"  onchange="printValue();">
+            <input type="number" aria-label="Value3" class="form-control" id="Value3" oninput="printValue();">
+            <select name="Unit3" id="Unit3"  oninput="printValue();">
                 <option value="1">W/(m.K)</option>
                 <option value="0.01">W/(cm.K)</option>
                 <option value="0.001927253">cal/s/cm/C</option>
@@ -326,8 +326,8 @@
             <div class="input-group">
                 <span class="" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;"> Kinematic Viscosity (Momentum Diffusivity) ($\nu$): </span>
             </div>
-            <input type="number" aria-label="Value6" class="form-control" id="Value6" onblur="printValue();">
-            <select name="Unit6" id="Unit6"  onchange="printValue();">
+            <input type="number" aria-label="Value6" class="form-control" id="Value6" oninput="printValue();">
+            <select name="Unit6" id="Unit6"  oninput="printValue();">
                 <option value="1">m^2/s</option>
                 <option value="3600">m^2/hr</option>
                 <option value="38750.077500155">ft^2/hr</option>
@@ -344,9 +344,13 @@
             <div class="input-group">
                 <span class="" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;"> Thermal Diffusivity ($\alpha$): </span>
             </div>
-            <input type="number" aria-label="Value5" class="form-control" id="Value5" onblur="printValue();">
-            <select name="Unit5" id="Unit5"  onchange="printValue();">
+            <input type="number" aria-label="Value5" class="form-control" id="Value5" oninput="printValue();">
+            <select name="Unit5" id="Unit5"  oninput="printValue();">
                 <option value="1">m^2/s</option>
+                <option value="3600">m^2/hr</option>
+                <option value="38750.077500155">ft^2/hr</option>
+                <option value="10000">stokes</option>
+                <option value="1550.003100006">in^2/s</option>
             </select>
         </div>
     </div>

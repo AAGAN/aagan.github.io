@@ -100,7 +100,7 @@
         
         
         let Br = document.querySelector('#Value6');
-        Br.value = k==0 || (T_w-T_0) == 0 ? 0 : Number((mu * Math.pow(V,2)/k/(T_w-T_0)).toExponential(6));
+        Br.value = k==0 || (T_w-T_0) == 0 ? 0 : Number((mu * Math.pow(V,2)/k/(T_w-T_0)).toFixed(6));
     }
 
 </script>
@@ -110,8 +110,8 @@
         <div class="input-group">
             <span class="" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;">Dynamic Viscosity ($\mu$): </span>
         </div>
-        <input type="number" aria-label="Value1" class="form-control" id="Value1" onblur="printValue();">
-        <select name="Unit1" id="Unit1"  onchange="printValue();">
+        <input type="number" aria-label="Value1" class="form-control" id="Value1" oninput="printValue();">
+        <select name="Unit1" id="Unit1"  oninput="printValue();">
             <option value="1">Pa.s</option>
             <option value="0.1">gr/cm s</option>
             <option value="0.1">dyne s/cm^2</option>
@@ -130,8 +130,8 @@
         <div class="input-group">
             <span class=" mx" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;">Characteristic Velocity ($u$): </span>
         </div>
-        <input type="number" aria-label="Value2" class="form-control" id="Value2" onblur="printValue();">
-        <select name="Unit2" id="Unit2"  onchange="printValue();">
+        <input type="number" aria-label="Value2" class="form-control" id="Value2" oninput="printValue();">
+        <select name="Unit2" id="Unit2"  oninput="printValue();">
             <option value="1">m/s</option>
             <option value="0.3048">ft/s</option>
         </select>
@@ -145,8 +145,8 @@
         <div class="input-group">
             <span class="" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;"> Thermal Conductivity ($\kappa$): </span>
         </div>
-        <input type="number" aria-label="Value3" class="form-control" id="Value3" onblur="printValue();">
-        <select name="Unit3" id="Unit3"  onchange="printValue();">
+        <input type="number" aria-label="Value3" class="form-control" id="Value3" oninput="printValue();">
+        <select name="Unit3" id="Unit3"  oninput="printValue();">
             <option value="1">W/(m.K)</option>
             <option value="0.01">W/(cm.K)</option>
             <option value="0.001927253">cal/s/cm/C</option>
@@ -160,8 +160,8 @@
         <div class="input-group">
             <span class="" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;"> Wall Temperature ($T_w$): </span>
         </div>
-        <input type="number" aria-label="Value4" class="form-control" id="Value4" onblur="printValue();">
-        <select name="Unit4" id="Unit4"  onchange="printValue();">
+        <input type="number" aria-label="Value4" class="form-control" id="Value4" oninput="printValue();">
+        <select name="Unit4" id="Unit4"  oninput="printValue();">
             <option value="K">Kelvin</option>
             <option value="C">°C</option>
             <option value="F">°F</option>
@@ -175,8 +175,8 @@
         <div class="input-group">
             <span class="" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;"> Bulk Fluid Temperature ($T_0$): </span>
         </div>
-        <input type="number" value = "0" aria-label="Value5" class="form-control" id="Value5" onblur="printValue();">
-        <select name="Unit5" id="Unit5"  onchange="printValue();">
+        <input type="number" value = "0" aria-label="Value5" class="form-control" id="Value5" oninput="printValue();">
+        <select name="Unit5" id="Unit5"  oninput="printValue();">
             <option value="K">Kelvin</option>
             <option value="C">°C</option>
             <option value="F">°F</option>
