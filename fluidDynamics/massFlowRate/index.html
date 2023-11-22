@@ -81,7 +81,7 @@
         let area = document.querySelector('#areaUnit').value * document.querySelector('#areaValue').value;
         let density = document.querySelector('#densityUnit').value * document.querySelector('#densityValue').value;
         let mfr = document.querySelector('#mfrValue');
-        mfr.value = Number((vel*area*density / document.querySelector('#mfrUnit').value).toFixed(4));
+        mfr.value = Number((vel*area*density / document.querySelector('#mfrUnit').value).toFixed(6));
     }
 </script>
 
@@ -91,8 +91,8 @@
         <div class="input-group">
         <span class="" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;">Density ($\rho$): </span>
         </div>
-        <input type="number" aria-label="density" class="form-control"  id="densityValue" onblur="printValue();">
-        <select name="densityUnit" id="densityUnit"  onchange="printValue();">
+        <input type="number" aria-label="density" class="form-control"  id="densityValue" oninput="printValue();">
+        <select name="densityUnit" id="densityUnit"  oninput="printValue();">
                 <option value="1" >kg/m^3</option>
                 <option value="16.0185" >lb/ft^3</option>
         </select>
@@ -105,8 +105,8 @@
         <div class="input-group">
         <span class=" mx" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;">Velocity ($V$): </span>
         </div>
-        <input type="number" aria-label="velocity" class="form-control" id="velValue" onblur="printValue();">
-        <select name="velUnit" id="velUnit"  onchange="printValue();">
+        <input type="number" aria-label="velocity" class="form-control" id="velValue" oninput="printValue();">
+        <select name="velUnit" id="velUnit"  oninput="printValue();">
                 <option value="1" >m/s</option>
                 <option value="0.3048" >ft/s</option>
         </select>
@@ -118,8 +118,8 @@
         <div class="input-group">
         <span class="" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;">Area ($A$): </span>
         </div>
-        <input type="number" aria-label="area" class="form-control"  id="areaValue" onblur="printValue();">
-        <select name="areaUnit" id="areaUnit"  onchange="printValue();">
+        <input type="number" aria-label="area" class="form-control"  id="areaValue" oninput="printValue();">
+        <select name="areaUnit" id="areaUnit"  oninput="printValue();">
                 <option value="1" >m^2</option>
                 <option value="0.092903" >ft^2</option>
         </select>
@@ -133,7 +133,7 @@
         <span class="" style="margin-left:3px;margin-bottom: -4px; margin-top:5px;">Mass Flow Rate ($\dot{m}$): </span>
         </div>
         <input readonly type="number" aria-label="velocity" class="form-control" id="mfrValue">
-        <select name="mfrUnit" id="mfrUnit"  onchange="printValue();">
+        <select name="mfrUnit" id="mfrUnit"  oninput="printValue();">
                 <option value="1" >kg/s</option>
                 <option value="0.453592" >lb/s</option>
                 <option value="0.01666666667" >kg/min</option>
