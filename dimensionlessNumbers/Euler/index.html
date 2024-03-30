@@ -85,7 +85,7 @@
         let V = document.querySelector('#Unit3').value * document.querySelector('#Value3').value;
 
         let Eu = document.querySelector('#Value4');
-        Eu.value = density == 0 || V == 0 ? 0 : Number(((p_u-p_d) / density / V^2).toFixed(6));
+        Eu.value = density == 0 || V == 0 ? 0 : Number(((p_u-p_d) / density / V**2).toFixed(6));
     }
 
 </script>
