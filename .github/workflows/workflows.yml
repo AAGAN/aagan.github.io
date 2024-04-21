@@ -1,0 +1,24 @@
+on:
+    push:
+      branches: [ "main" ]
+
+jobs:
+    spell-check:
+      name: Spell Check
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v4
+  
+        - name: Install Dependencies
+          run: |
+            sudo apt-get update && sudo apt-get install -y hunspell
+  
+        - name: Spell Check
+          run: |
+            # Example command for checking markdown files
+            hunspell -l -t -i utf-8 **/*.md
+  
+            # Example command for checking HTML files
+            hunspell -l -t -i utf-8 **/*.html
+  
