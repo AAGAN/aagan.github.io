@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164271523-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164271523-1');
+		</script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -23,31 +31,35 @@
 					<h3>About Me</h3>
 					<p class="fragment fade-in-then-semi-out">Background in Mechanical Engineering with a focus on Thermal fluids</p>
 					<p class="fragment fade-in-then-semi-out">Applied computational fluid dynamics to aerospace, fire protection and polymer processing industries</p>
-					<p class="fragment fade-in-then-semi-out">Developed scientific software for different industries</p>
+					<p class="fragment fade-in">Developed scientific software for different industries</p>
 				</section>
 				<section data-visibility="hidden">
 					<h3>Work History</h3>
 					<p class="fragment fade-in-then-semi-out">Ionic Materials <a target="_blank" href="https://ionicmaterials.com/"><img src="./assets/ionicmaterials.svg" alt="ionicmaterials" width="100"></a></p>
 					<p class="fragment fade-in-then-semi-out">Johnson Controls <a target="_blank" href="https://www.johnsoncontrols.com/"> <img src="./assets/johnson-controls.png" alt="johnson-controls" width="100"></a></p>
 					<p class="fragment fade-in-then-semi-out">Aspen Technology <a target="_blank" href="https://www.aspentech.com/"><img src="./assets/cc-logo-aspentech.svg" alt="cc-logo-aspentech" width="100"></a></p>
-					<p class="fragment fade-in-then-semi-out">Terarecon <a target="_blank" href="https://www.terarecon.com/"><img src="./assets/terarecon-cai-logo.webp" alt="terarecon-cai-logo" width="100"></a></p>
+					<p class="fragment fade-in">Terarecon <a target="_blank" href="https://www.terarecon.com/"><img src="./assets/terarecon-cai-logo.webp" alt="terarecon-cai-logo" width="100"></a></p>
 				</section>
 				<section>
 					<section>
 						<h3>PhD activities</h3>
 						<p class="fragment fade-in-then-semi-out">Simulation and experimental studies of liquid crystalline polymers (LCPs)</p>
-						<p class="fragment fade-in-then-semi-out">Worked under supervision of Prof. Michael Zimmerman and Prof. Anil Saigal</p>
+						<p class="fragment fade-in">Worked under supervision of Prof. Michael Zimmerman and Prof. Anil Saigal</p>
 					</section>
 					<section>
 						<h3>PhD Thesis</h3>
 						<p class="fragment fade-in-then-semi-out">Development of a simulation tool to analyze the orientation of LCPs during extrusion process.</p>
-						<p><img class="fragment fade-in-then-semi-out" src="./assets/Evolution.png" alt="Evolution" width="500"></p>
-						<a target="_blank" class="fragment fade-in-then-semi-out" href="https://github.com/AAGAN/Orientation_UDF/tree/master">UDF code added to Ansys Fluent in C</a>
+						<span class="fragment fade-in">
+							<p><img src="./assets/Evolution.png" alt="Evolution" width="500"></p>
+							<a target="_blank" href="https://github.com/AAGAN/Orientation_UDF/tree/master">UDF code added to Ansys Fluent in C</a>
+						</span>
 					</section>
 					<section>
 						<h3>Research assistant (PhD) <a target="_blank" href="https://ionicmaterials.com/"><img src="./assets/ionicmaterials.svg" alt="ionicmaterials" width="100"></a></h3>
-						<p class="fragment fade-in-then-semi-out">CFD modeling of extrusion processes</p>
-						<img class="fragment fade-in-then-semi-out" src="./assets/LargeExtrusionDieImages.jpg" alt="Extrusion" height="550">
+						<span class="fragment fade-in">
+							<p>CFD modeling of extrusion processes</p>
+							<img src="./assets/LargeExtrusionDieImages.jpg" alt="Extrusion" height="550">
+						</span>
 					</section>
 				</section>
 				<section>
@@ -55,14 +67,16 @@
 						<h3>Johnson Controls Inc.<a target="_blank" href="https://www.johnsoncontrols.com/"> <img src="./assets/johnson-controls.png" alt="johnson-controls" width="100"></a></h3>
 						<p class="fragment fade-in-then-semi-out">Worked mostly on special hazards projects </p>
 						<p class="fragment fade-in-then-semi-out">Created fire protection system design software for inert and halocarbon fire extinguishing systems</p>
-						<p class="fragment fade-in-then-semi-out">Designed, patented a silent nozzle for inert gas fire protection systems</p>
-						<p class="fragment fade-in-then-semi-out">Took fire dynamics and fire modeling courses at WPI and created jupyter notebooks to automate calculations at JCI</p>
+						<p class="fragment fade-in-then-semi-out">Designed, patented a silent nozzle for inert gas fire protection systems <a href="https://patents.google.com/patent/US11612773B2/en">(Patent US11612773B2)</a></p>
+						<p class="fragment fade-in">Took fire dynamics and fire modeling courses at WPI and created jupyter notebooks to automate calculations at JCI</p>
 					</section>
 					<section>
 						<h3>Fire protection design software</h3>
 						<p class="fragment fade-in-then-semi-out">Pipe network design software for inert gasses and halocarbons</p>
-						<img class="fragment fade-in-then-semi-out" src="./assets/sdc-video.gif" alt="sdc-video" height="300">
-						<a  target="_blank" class="fragment fade-in-then-semi-out" href="https://www.suppressiondesigncenter.com">www.suppressiondesigncenter.com</a>
+						<span class="fragment fade-in">
+							<img class="fragment fade-in-then-semi-out" src="./assets/sdc-video.gif" alt="sdc-video" height="300">
+							<a target="_blank" class="fragment fade-in" href="https://www.suppressiondesigncenter.com">www.suppressiondesigncenter.com</a>
+						</span>
 					</section>
 					<section>
 						<h3>Ideal gas flow in pipe with heat transfer and friction</h3>
@@ -71,20 +85,24 @@
 						\end{equation}\]
 
 						\[\begin{equation}
-						\tiny d M^2=\left(F_{T_v}+\frac{2 T_0}{T_w-T_0} F_f\right) \frac{d T_0}{T_0}
+						\tiny d M^2=F_{T_0} \frac{d T_0}{T_0}+F_f 4 f \frac{d x}{D}=\left(F_{T_v}+\frac{2 T_0}{T_w-T_0} F_f\right) \frac{d T_0}{T_0}
 						\end{equation}\]
+						<a href="https://github.com/AAGAN/twoPhaseSimulationInternProject/blob/master/modules/General%20Solution%20Using%20Scipy.ipynb" target="_blank">Solution using Scipy</a>
 					</section>
 					<section>
 						<h3>Fire protection design software</h3>
 						<p class="fragment fade-in-then-semi-out">Fluid delivery time calculation engine for fire sprinklers</p>
-						<a target="_blank" class="fragment fade-in-then-semi-out" href="https://www.sprinkcad.com/solutions/sprinkfdt/">www.SprinkFDT.com</a>
+						<a target="_blank" class="fragment fade-in-then-semi-out" href="https://www.sprinkcad.com/solutions/sprinkfdt/">www.SprinkFDT.com</a><br>
+						<a class="fragment fade-in" href="https://github.com/AAGAN/syncDataCollection/blob/master/DVPlots_new.ipynb" target="_blank">Data Analysis</a>
 					</section>
 				</section>
 				<section>
 					<section>
 						<h3>Aspen Technology <a target="_blank" href="https://www.aspentech.com/"><img src="./assets/cc-logo-aspentech.svg" alt="cc-logo-aspentech" width="100"></a></h3>
-						<p class="fragment fade-in-then-semi-out">Design software for chemical and mechanical engineers</p>
-						<img class="fragment fade-in-then-semi-out" src="./assets/aspenEdr.png" alt="aspenedrgui" width="600">
+						<span class="fragment fade-in">
+							<p>Design software for chemical and mechanical engineers</p>
+							<img src="./assets/aspenEdr.png" alt="aspenedrgui" width="600">
+						</span>
 					</section>
 					<section>
 						<h3>Aspen Technology <a target="_blank" href="https://www.aspentech.com/"><img src="./assets/cc-logo-aspentech.svg" alt="cc-logo-aspentech" width="100"></a></h3>
@@ -100,13 +118,13 @@
 					</section>
 					<section>
 						<h3>Terarecon Inc. <a target="_blank" href="https://www.terarecon.com/"><img src="./assets/terarecon-cai-logo.webp" alt="terarecon-cai-logo" width="100"></a></h3>
-						<p class="fragment fade-in-then-semi-out">Implemented dockerized cloud functionality in Linux environment</p>
 						<p class="fragment fade-in-then-semi-out">Optimized algorithms and SQL query performance of server side code</p>
+						<p class="fragment fade-in-then-semi-out">Implemented dockerized cloud functionality in Linux environment</p>
 					</section>
 				</section>
 				<section>
 					<h3>Personal Projects</h3>
-					<a class="fragment fade-in-then-semi-out" href="https://aagan.github.io">Personal website with engineering calculations</a>
+					<a class="fragment fade-in-then-semi-out" href="https://aagan.github.io" target="_blank">Personal website with engineering calculations</a>
 				</section>
 			</div>
 		</div>
